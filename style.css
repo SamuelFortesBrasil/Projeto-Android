@@ -1,0 +1,202 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'fonte-android';
+    src: url(fontes/idroid.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor1:#59C9A5;
+    --cor2:#265a4a;
+    --cor3: #1a3f34;
+    --fonte-padrão: Arial, Sans-Serif, Verdana;
+    --fonte-titulo: 'Bebas Neue', Arial, Sans-Serif;
+    --fonte-android:"fonte-android", Arial, Verdana, Sans-Serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #59C9A5;
+}
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+}
+h1{
+    font-family: var(--fonte-android);
+}
+h2{
+    font-family: var(--fonte-android);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+header{
+    background-image: linear-gradient(to top, #1a3f34,#265a4a,#59C9A5);
+    font-family: var(--fonte-padrão);
+    max-height: 500px;
+    margin: auto;
+    padding-top: 30px;
+    box-shadow: 0px 20px 12px 2px rgba(58, 58, 58, 0.87);
+}
+header > h1{
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-titulo);
+    text-shadow: 2px 2px 1px rgba(43, 43, 43, 0.959);
+    padding-bottom: 15px;
+    font-size: 68px;
+}
+header > p{
+    margin: auto;
+    text-align: center;
+    color: white;
+    width: 400px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+nav{
+    background-color:var(--cor3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+nav > a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    margin: auto;
+    transition-duration: 0.2s;
+}
+nav > a:hover{
+    color: rgb(219, 219, 219);
+    font-size: 14px;
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 3px 6px 0px rgba(37, 37, 37, 0.774);
+}
+main h1{
+    color: var(--cor3);
+}
+main h2{
+    font-size: 1.3em;
+    background-image: linear-gradient(to right ,var(--cor1) ,transparent);
+    color: var(--cor3);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong{
+    font-weight: bold;
+    color: var(--cor3);
+}
+main a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    padding: 6px 2px;
+    transition-duration: 0.2s;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+    font-size: 14px;
+    padding: 3px 1px;
+}
+main img{
+    width: 100%;
+}
+.bugdroid{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+article > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+div.video{
+    background-color: var(--cor2);
+    margin-left: -20px;
+    margin-bottom: 30px;
+    margin-right: -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.4%;
+}
+div.video > iframe{
+ position: absolute;
+ top: 5%;
+ left: 5%;
+ width: 90%;
+ height: 90%;
+}
+aside{
+    background-color: #59C9A5;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside > h3{
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px 10px 10px 30px;
+    margin: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: none;
+    padding-left: 25px;
+}
+aside abbr{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--cor3);
+}
+footer > p{
+    font-family: var(--fonte-padrão);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    margin: auto;
+}
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    font-size: 10px;
+    transition-duration: 0.2s;
+}
